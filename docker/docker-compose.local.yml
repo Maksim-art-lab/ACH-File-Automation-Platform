@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  backend:
+    container_name: "pg-local_back_backend"
+    environment:
+      - POSTGRES_HOST=localhost
+      - LOCALSTACK_HOST=localhost
+  postgres:
+    environment:
+      - POSTGRES_HOST=localhost
+      - LOCALSTACK_HOST=localhost
